@@ -1,0 +1,179 @@
+/* -------------------GERAL ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Spartan', sans-serif;
+    src: url('../fonts/Spartan-Bold.ttf') format('truetype'), url('../fonts/Spartan-Regular.ttf') format('truetype');
+}
+
+:root {
+    --bg-color: #121214;
+    --h1-color: #08C05E;
+    --h2-color: #FFFFFF;
+    --text-color: #A8A8A8;
+    --a-color: #8257E5;
+
+    font-size: 62.5%;  /* 1rem = 10px */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    font-size: 1.6rem;
+
+    color: #FFFFFF; /* para melhor leitura do texto alternativo caso a img não carregue*/
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    width: 50%;
+    height: 100vh;
+
+    background-color: var(--bg-color);
+}
+
+.right {
+    width: 50%;
+
+    background-image: url(../img/read_news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    Background-position: right center;
+}
+
+/* --------- HEADER -------*/
+
+header {
+    margin: 5rem 0 9.2rem 3rem;
+}
+
+/* ---------- MAIN ------*/
+
+main {
+    margin-left: 3.6rem;
+    margin-right: 3.7rem;
+}
+
+
+main h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--h1-color);
+
+    margin-bottom: 0.856rem;
+}
+
+main h2 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--h2-color);
+
+    margin-bottom: 0.9rem;
+}
+
+main p {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.content-main {
+    margin-bottom: 5.2rem;
+}
+
+/* ------------- input ------*/
+
+form label {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+form .input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 79.8rem;
+    height: 4.8rem;
+
+    background-color: var(--h2-color);
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+
+    
+    margin-top: 1.7rem;
+    margin-bottom: 4.8rem;
+}
+
+.input-box input {
+    width: 100%;
+    height: 2rem;
+    margin-left: 1rem;
+
+    outline: none;
+
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+
+form .input-box button {
+    border: none;
+
+    background-color: var(--a-color);
+
+    width: 4.8rem;
+    height: 4.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: filter .2s;
+}
+
+
+form .input-box button:hover {
+    filter: brightness(1.1);
+}
+form .input-box button:active {
+    opacity: 0.7;
+}
+
+/*------------ others --------*/
+
+
+.others  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    color: var(--a-color);
+
+    transition: filter .2s;
+}
+
+
+.others a:hover {
+    filter: brightness(1.1);
+}
+
+.others a:active {
+    opacity: 0.7;
+}
